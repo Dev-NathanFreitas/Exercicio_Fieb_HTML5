@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios Formularios em HTML5</title>
+</head>
+<body>
+    <h1>Exercicio 1</h1>
+    <form method="post">
+        <label for="cnome"><legend><strong>Nome:</legend></label>
+        <input type="text" name="tnome" id="cnome"size="50px">
+        <br>
+        <label for="cemail"><legend><strong>E-mail:</legend></label>
+        <input type="email" name="temail" id="cemail" size="50px">
+        <br>
+        <label for="csite"><legend><strong>Website:</legend></label>
+        <input type="text" name="tsite" id="csite" size="50px">
+        <br>
+        <label for="ccom"><legend><strong>Comentario:</legend></label>
+        <textarea name="comentario" name="tcom" id="ccom" cols="52" rows="10"></textarea>
+        <br>
+        <legend><strong>observação: seu comentário sera publicado apos analise do moderador</legend>
+        <br>
+        <input type="button" value="Enviar comentário">
+    </form>
+
+    <h1>Exercicio 2</h1>
+    <table>
+        <tr>
+            <td bgcolor="yellow" width="500px">Sistema de gestão academica</td>
+        </tr>
+        <tr height="20px">
+            <td><font size="2px">MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</font></td>
+        </tr>
+        
+   
+    <table>
+        <form method="post">
+            <tr>
+                <td width="35%">
+                    <label for="clogin" >Login</label>
+                </td>
+                <td>
+                    <input type="text" id="clogin" name="tlogin">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <label for="csenha">Senha</label>
+                    
+                </td>
+                <td>
+                    <input type="password" id="csenha" name="tsenha">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cstatus">Status</label>
+                    
+                </td>
+                <td colspan="3">
+                    <select id="cstatus">
+                        <option value="ativo">Ativo</option>
+                        <option value="inativo">Inativo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ctipo" ">Tipo</label>
+                </td>
+                <td>
+                    <input type="radio" name="ttipo" id="ctipo">Tecnico
+                    <input type="radio" name="ttipo" id="ctipo">Professor
+                    <input type="radio" name="ttipo" id="ctipo">Aluno
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                    <label for="cdata">Data de Crição</label>
+                </td>
+                <td>
+                    <input type="date" id="cdata" name="tdata">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cperfil">Perfil</label>
+                </td>
+                <td>
+                    <input type="radio" name="tperfil" id="cperfil">Convidado
+                    <input type="radio" name="tperfil" id="cperfil">Administrador
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cob">Observações</label>
+                </td>
+                <td>
+                    <textarea name="tob" id="cob" cols="40" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <label for="cmod">Modulos</label>
+                </td>
+                <td>
+                    <input type="checkbox">Compras
+                    <input type="checkbox">Biblioteca
+                    <input type="checkbox">Acadêmico
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">Documentação
+                    <input type="checkbox">Recursos humanos
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Cadastrar">
+                    <input type="button" value="Excluir">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
